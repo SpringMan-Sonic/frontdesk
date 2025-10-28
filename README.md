@@ -129,7 +129,7 @@ Step 2: Setup Backend (Node.js)
 mkdir -p backend/src/{config,services}
 mkdir -p backend/public
 
-# Create package.json
+
 cat > backend/package.json << 'EOF'
 {
   "name": "Frontdesk",
@@ -155,7 +155,6 @@ cat > backend/package.json << 'EOF'
   }
 }
 EOF
-
 # Install dependencies
 cd backend
 npm install
@@ -344,6 +343,7 @@ FRONTDESK/
 │   └── .env
 │
 └── README.md
+
 
 
 
