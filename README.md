@@ -325,6 +325,8 @@ Terminal Output:
 Now, re-test the same question — the AI should answer automatically!
 
 📂 Project Structure
+
+
 FRONTDESK/
 │
 ├── backend/
@@ -343,6 +345,7 @@ FRONTDESK/
 │   └── .env
 │
 └── README.md
+
 
 
 
