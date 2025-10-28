@@ -120,15 +120,17 @@ Cartesia – Voice synthesis (optional)
 
 🚀 Installation Guide
 Step 1: Clone the Repository
+```
 # Create project directory
 mkdir FRONTDESK
 cd FRONTDESK
+```
 
 Step 2: Setup Backend (Node.js)
+```
 # Create folder structure
 mkdir -p backend/src/{config,services}
 mkdir -p backend/public
-
 
 cat > backend/package.json << 'EOF'
 {
@@ -155,16 +157,21 @@ cat > backend/package.json << 'EOF'
   }
 }
 EOF
+
 # Install dependencies
+
 cd backend
 npm install
-
+```
 Step 3: Setup Voice Agent (Python)
+```
 cd ..
 mkdir voice-agent
 cd voice-agent
+```
 
 # Create virtual environment
+```
 python -m venv venv
 
 # Activate environment
@@ -172,8 +179,10 @@ python -m venv venv
 venv\Scripts\activate
 # Mac/Linux
 source venv/bin/activate
+```
 
 # Create requirements.txt
+```
 cat > requirements.txt << 'EOF'
 livekit~=1.0.17
 livekit-agents==1.2.15
@@ -182,7 +191,7 @@ python-dotenv==1.0.0
 aiohttp~=3.10
 google-generativeai
 EOF
-
+```
 # Install dependencies
 pip install -r requirements.txt
 
@@ -346,6 +355,7 @@ FRONTDESK/
 │
 └── README.md
 ```
+
 
 
 
