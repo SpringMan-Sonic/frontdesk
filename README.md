@@ -514,6 +514,8 @@ curl -X POST http://localhost:3000/api/process-message \
 
 **Expected:** AI now answers immediately without escalation!
 
-#   f r o n t d e s k  
- #   f r o n t d e s k  
+#   f r o n t d e s k 
+ 
+ #   f r o n t d e s k 
+ 
  
