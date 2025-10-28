@@ -197,6 +197,7 @@ pip install -r requirements.txt
 
 ⚙️ Configuration
 Step 1: Create .env for Backend
+```
 # Firebase Configuration
 FIREBASE_PROJECT_ID=your-project-id
 FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nYour\nPrivate\nKey\nHere\n-----END PRIVATE KEY-----\n"
@@ -214,8 +215,9 @@ BUSINESS_NAME=Luxury Salon & Spa
 BUSINESS_PHONE=+919876543210
 SUPERVISOR_PHONE=+919876543210
 SUPERVISOR_NAME=Your Name
-
+```
 Step 2: Create .env for Voice Agent
+```
 # LiveKit Configuration
 LIVEKIT_URL=wss://your-project.livekit.cloud
 LIVEKIT_API_KEY=APIxxxxxxxxx
@@ -229,6 +231,7 @@ BACKEND_API=http://localhost:3000/api
 
 # Business Info
 BUSINESS_NAME=Luxury Salon & Spa
+```
 
 🔥 Firestore Initialization
 
@@ -259,6 +262,7 @@ Expected Output:
 🏢 Business: Luxury Salon & Spa
 
 Terminal 2 — Start Voice Agent
+```
 cd voice-agent
 # Activate environment
 venv\Scripts\activate  # (Windows)
@@ -270,7 +274,7 @@ python agent.py dev
 Browser — Open Dashboard
 http://localhost:3000
 
-
+```
 You’ll see the Supervisor Dashboard with:
 
 ⏳ Pending Requests
@@ -282,6 +286,7 @@ You’ll see the Supervisor Dashboard with:
 📊 Statistics
 
 🧪 Testing
+```
 ✅ Test 1: Known Question (No Escalation)
 curl -X POST http://localhost:3000/api/process-message \
 -H "Content-Type: application/json" \
@@ -332,7 +337,7 @@ Terminal Output:
 
 
 Now, re-test the same question — the AI should answer automatically!
-
+```
 📂 Project Structure
 ```
 
@@ -355,6 +360,7 @@ FRONTDESK/
 │
 └── README.md
 ```
+
 
 
 
